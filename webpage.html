@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Undergraduate Student Lifestyles</title>
+	<style>
+		body {
+			background-color: blue;
+			margin: 0; /* Remove default margin */
+		}
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			box-sizing: border-box;
+		}
+		img {
+			max-width: 15%;
+			height: auto;
+			display: block;
+			margin: 0;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		form {
+			background-color: white;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+		}
+		label {
+			display: block;
+			margin-bottom: 10px;
+		}
+		input[type="text"], select {
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			margin-bottom: 20px;
+			width: 100%;
+		}
+		button {
+			background-color: green;
+			color: white;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 5px;
+			cursor: pointer;
+			margin-top: 10px;
+		}
+		button:hover {
+			background-color: black;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.mycustomer.com%2Fsites%2Fdefault%2Ffiles%2Fistock_blossomstar_survey.jpg&f=1&nofb=1&ipt=b1aea7c20f215be6081608f65be39f43ae24fa5c922a863da0359d50bc080d40&ipo=images" alt="Example Image">
+		<form>
+			<h1>Undergraduate Student Lifestyles</h1>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name">
+
+			<label for="gender">Gender:</label>
+			<select id="gender" name="gender">
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+			</select>
+
+			<label>Favorite Color:</label>
+			<label for="blue"><input type="radio" id="blue" name="color" value="blue">Blue</label>
+			<label for="green"><input type="radio" id="green" name="color" value="green">Green</label>
+			<label for="yellow"><input type="radio" id="yellow" name="color" value="yellow">Yellow</label>
+			<label for="black"><input type="radio" id="black" name="color" value="black">Black</label>
+
+
+            <label>What major are you?</label>
+			<label for="analytics"><input type="checkbox" id="analytics" name="major[]" value="analytics">Analytics</label>
+			<label for="management"><input type="checkbox" id="management" name="major[]" value="management">Management</label>
+			<label for="accounting"><input type="checkbox" id="accounting" name="major[]" value="accounting">Accounting</label>
+			<label for="finance"><input type="checkbox" id="finance" name="major[]" value="finance">Finance</label>
+           
+		</form>
+	</div>
+	<button onclick="window.location.href='./submit.html'">Submit</button>
+	<button onclick="window.location.href='./page2.html';">
+		Click Here for help
+	</button>
+</body>
+</html>
